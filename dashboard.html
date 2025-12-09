@@ -36,8 +36,8 @@
             padding: 30px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 20px;
+            justify-content: flex-start;
+            gap: 30px;
             flex-wrap: wrap;
             border-bottom: 3px solid #006633;
         }
@@ -46,6 +46,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            flex-shrink: 0;
         }
         
         .header-logo img {
@@ -218,7 +219,7 @@
         
         .visual-container {
             width: 100%;
-            height: 800px;
+            height: 700px;
             border: 1px solid rgba(0, 102, 51, 0.15);
             border-radius: 8px;
             overflow: visible;
@@ -272,11 +273,11 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class='header-logo'><img src='../img/beetmann.png' alt='Beetmann Logo' /></div>
+            <div class='header-logo'><img src='img/beetmann.png' alt='Beetmann Logo' /></div>
             <div class="header-content">
                 <h1>Reporte de Análisis MEM</h1>
                 <p>Precios Zonales, Consumo y Generación de Energía</p>
-                <p style="font-size: 0.9em; margin-top: 10px;">Última actualización: 08/12/2025 15:21:28</p>
+                <p style="font-size: 0.9em; margin-top: 10px;">Última actualización: 09/12/2025 13:31:29</p>
             </div>
         </div>
         
@@ -549,7 +550,7 @@
                 </div>
                 <div class="visual-card">
                     <h3>Escenarios de Montos en Mercados</h3>
-                    <div class="description">Comparativa estratégica del costo real pagado frente a diferentes escenarios hipotéticos de compra de energía.</div>
+                    <div class="description"><b>Comparativa estratégica del costo real pagado frente a diferentes escenarios hipotéticos de compra de energía.</b><br>Este tablero evalúa la eficiencia de compra contrastando el Costo Real frente a dos escenarios:<br>• <span style='color: #006400'><b>Escenario Óptimo (verde):</b></span> Refleja el ahorro potencial no capturado.<br>• <span style='color: #B22222'><b>Escenario Pésimo (rojo):</b></span> Representa el riesgo de mercado evitado.<br>El <b>índice final</b> califica la gestión del 0% al 100%, indicando qué tan cerca estuvimos de obtener el precio mínimo posible.</div>
                     <div class="visual-container">
                         <iframe 
                             src="visualizations/data_consumption/heatmap_Escenarios_MEM.html" 
