@@ -1,0 +1,194 @@
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+        <div style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px; border: 1px solid #dee2e6;">
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <label for="clave-select-index" style="margin-right: 10px; font-weight: bold; color: #006633;">Clave de Carga:</label>
+                    <select id="clave-select-index" onchange="updateChartIndexEvolution()" style="padding: 8px; border: 1px solid #006633; border-radius: 3px; min-width: 250px;">
+                        <option value="C038-304-HM | AGUASCALIENTES" selected>C038-304-HM | AGUASCALIENTES</option><option value="C038-804-HM | CANCUN" >C038-804-HM | CANCUN</option><option value="C038-317-HM | CIENEGA" >C038-317-HM | CIENEGA</option><option value="C038-317A4A5 | CIENEGA" >C038-317A4A5 | CIENEGA</option><option value="C038-318-HM | GUADALAJARA" >C038-318-HM | GUADALAJARA</option><option value="C038-501-HM | LAGUNA" >C038-501-HM | LAGUNA</option><option value="C038-801-HS | MERIDA" >C038-801-HS | MERIDA</option><option value="C038-641-HM | MONTERREY" >C038-641-HM | MONTERREY</option><option value="C038-802-HM | MOTUL TIZIMIN" >C038-802-HM | MOTUL TIZIMIN</option><option value="C038-325-HM | QUERETARO" >C038-325-HM | QUERETARO</option><option value="C038-326-HM | SAN JUAN DEL RIO" >C038-326-HM | SAN JUAN DEL RIO</option><option value="C038-307-HM | SAN LUIS POTOSI" >C038-307-HM | SAN LUIS POTOSI</option><option value="C038-800-HM | TICUL" >C038-800-HM | TICUL</option><option value="C038-102-HM | VDM NORTE" >C038-102-HM | VDM NORTE</option><option value="C038-104-HM | VDM SUR" >C038-104-HM | VDM SUR</option><option value="C038-322-HM | ZAPOTLAN" >C038-322-HM | ZAPOTLAN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="plotly-div-index-evolution" class="plotly-graph-div" style="height:600px; width:1200px;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("plotly-div-index-evolution")) {                    Plotly.newPlot(                        "plotly-div-index-evolution",                        [{"fill":"tozeroy","fillcolor":"rgba(0, 102, 51, 0.1)","hovertemplate":"\u003cb\u003eMes:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003e\u00cdndice:\u003c\u002fb\u003e %{y:.2f}%\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#006633","width":3},"marker":{"color":"#006633","line":{"color":"white","width":2},"size":10},"mode":"lines+markers","name":"\u00cdndice \u00d3ptimo\u2013P\u00e9simo","x":["2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11"],"y":{"dtype":"f8","bdata":"AAAAAAAA+H8AAAAAAAD4f\u002fxuf0idI0hAORYRjgjCSkCrbYfti\u002fRSQKSfRentnU1ASNuhIXZOUUDTr7VNUnVOQO8qeOj1skJAxhaoehyUREBY3vWkrIlQQJ1uWpGtCThA"},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"shapes":[{"line":{"color":"gray","dash":"dash"},"opacity":0.5,"type":"line","x0":0,"x1":1,"xref":"x domain","y0":50,"y1":50,"yref":"y"}],"annotations":[{"showarrow":false,"text":"50%","x":1,"xanchor":"left","xref":"x domain","y":50,"yanchor":"middle","yref":"y"}],"title":{"font":{"size":18,"color":"#006633"},"text":"\u00cdndice \u00d3ptimo\u2013P\u00e9simo (%) \u2014 Clave de Carga: C038-304-HM \u2014 Zona: AGUASCALIENTES"},"xaxis":{"title":{"font":{"size":14},"text":"Mes"},"tickmode":"array","tickvals":["2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11"],"ticktext":["2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11"],"tickangle":-45,"showgrid":true,"gridcolor":"lightgray","showline":true,"mirror":true},"yaxis":{"title":{"font":{"size":14},"text":"\u00cdndice \u00d3ptimo\u2013P\u00e9simo (%)"},"showgrid":true,"gridcolor":"lightgray","showline":true,"mirror":true,"range":[0,100],"tickmode":"linear","dtick":10},"margin":{"l":80,"r":40,"t":100,"b":100},"font":{"family":"Arial","size":12},"hovermode":"x unified","autosize":false,"width":1200,"height":600,"showlegend":false},                        {"responsive": true}                    )                };            </script>        </div>
+
+        <script>
+        const dataIndexEvolution = {"C038-304-HM | AGUASCALIENTES_2025-02": 48.278237402175336, "C038-304-HM | AGUASCALIENTES_2025-03": 53.51588607630078, "C038-304-HM | AGUASCALIENTES_2025-04": 75.82104051804951, "C038-304-HM | AGUASCALIENTES_2025-05": 59.233822974201104, "C038-304-HM | AGUASCALIENTES_2025-06": 69.22596016699129, "C038-304-HM | AGUASCALIENTES_2025-07": 60.91657420512606, "C038-304-HM | AGUASCALIENTES_2025-08": 37.39812951915325, "C038-304-HM | AGUASCALIENTES_2025-09": 41.157119113993346, "C038-304-HM | AGUASCALIENTES_2025-10": 66.15116237650489, "C038-304-HM | AGUASCALIENTES_2025-11": 24.037804684236665, "C038-804-HM | CANCUN_2024-12": 39.235392142977076, "C038-804-HM | CANCUN_2025-01": 46.822213103169005, "C038-804-HM | CANCUN_2025-02": 65.4427103445761, "C038-804-HM | CANCUN_2025-03": 60.58074187571714, "C038-804-HM | CANCUN_2025-04": 68.20683466582317, "C038-804-HM | CANCUN_2025-05": 74.43806556092291, "C038-804-HM | CANCUN_2025-06": 68.49263592038152, "C038-804-HM | CANCUN_2025-07": 69.20229349822455, "C038-804-HM | CANCUN_2025-08": 73.60755851904467, "C038-804-HM | CANCUN_2025-09": 63.137607458138255, "C038-804-HM | CANCUN_2025-10": 67.09995595731922, "C038-804-HM | CANCUN_2025-11": 56.44484004427076, "C038-317-HM | CIENEGA_2024-12": 64.8671161466607, "C038-317-HM | CIENEGA_2025-01": 43.683166408671475, "C038-317-HM | CIENEGA_2025-02": 61.57669173623378, "C038-317-HM | CIENEGA_2025-03": 49.21630939318932, "C038-317-HM | CIENEGA_2025-04": 53.291717352156255, "C038-317-HM | CIENEGA_2025-05": 54.26883298569488, "C038-317-HM | CIENEGA_2025-06": 58.18710383975817, "C038-317-HM | CIENEGA_2025-07": 56.00669746966683, "C038-317-HM | CIENEGA_2025-08": 35.80397151064258, "C038-317-HM | CIENEGA_2025-09": 55.62417410870366, "C038-317-HM | CIENEGA_2025-10": 48.41874418052443, "C038-317-HM | CIENEGA_2025-11": 21.37069766541705, "C038-317A4A5 | CIENEGA_2024-12": 72.61886903495675, "C038-317A4A5 | CIENEGA_2025-01": 43.725476086892336, "C038-317A4A5 | CIENEGA_2025-02": 63.28244440959253, "C038-317A4A5 | CIENEGA_2025-03": 59.46794889444449, "C038-317A4A5 | CIENEGA_2025-04": 65.47581042807596, "C038-317A4A5 | CIENEGA_2025-05": 56.26341505405345, "C038-317A4A5 | CIENEGA_2025-06": 64.11190531010644, "C038-317A4A5 | CIENEGA_2025-07": 69.51113987368235, "C038-317A4A5 | CIENEGA_2025-08": 46.540475105053616, "C038-317A4A5 | CIENEGA_2025-09": 41.07655404906859, "C038-317A4A5 | CIENEGA_2025-10": 60.045028272778225, "C038-317A4A5 | CIENEGA_2025-11": 22.37949197254849, "C038-318-HM | GUADALAJARA_2024-12": 74.92588637254705, "C038-318-HM | GUADALAJARA_2025-01": 45.16579955229317, "C038-318-HM | GUADALAJARA_2025-02": 58.65103944764433, "C038-318-HM | GUADALAJARA_2025-03": 56.455050498452295, "C038-318-HM | GUADALAJARA_2025-04": 59.316273244030135, "C038-318-HM | GUADALAJARA_2025-05": 55.875867564975515, "C038-318-HM | GUADALAJARA_2025-06": 59.798776029143696, "C038-318-HM | GUADALAJARA_2025-07": 68.76808194009405, "C038-318-HM | GUADALAJARA_2025-08": 45.719743060667, "C038-318-HM | GUADALAJARA_2025-09": 42.633454374133656, "C038-318-HM | GUADALAJARA_2025-10": 58.71016706624336, "C038-318-HM | GUADALAJARA_2025-11": 21.957023778894268, "C038-501-HM | LAGUNA_2024-12": 60.6613032271245, "C038-501-HM | LAGUNA_2025-01": 40.05667223891919, "C038-501-HM | LAGUNA_2025-02": 84.56020037827024, "C038-501-HM | LAGUNA_2025-03": 67.06920469521121, "C038-501-HM | LAGUNA_2025-04": 67.32460626518551, "C038-501-HM | LAGUNA_2025-05": 59.43261460553203, "C038-501-HM | LAGUNA_2025-06": 73.5378272959658, "C038-501-HM | LAGUNA_2025-07": 57.63094516935503, "C038-501-HM | LAGUNA_2025-08": 46.150642933117844, "C038-501-HM | LAGUNA_2025-09": 74.22446837783772, "C038-501-HM | LAGUNA_2025-10": 112.71480689036768, "C038-501-HM | LAGUNA_2025-11": 63.31320861199987, "C038-801-HS | MERIDA_2025-07": 46.92284257716259, "C038-801-HS | MERIDA_2025-08": 72.24622726957952, "C038-801-HS | MERIDA_2025-09": 64.11971249324229, "C038-801-HS | MERIDA_2025-10": 58.0999676508372, "C038-801-HS | MERIDA_2025-11": 36.878901215595405, "C038-641-HM | MONTERREY_2024-12": 63.26480959611139, "C038-641-HM | MONTERREY_2025-01": 50.23207446593341, "C038-641-HM | MONTERREY_2025-02": 49.45671706912322, "C038-641-HM | MONTERREY_2025-03": 60.39672785804644, "C038-641-HM | MONTERREY_2025-04": 66.69767974711046, "C038-641-HM | MONTERREY_2025-05": 57.1526058334102, "C038-641-HM | MONTERREY_2025-06": 67.603008771494, "C038-641-HM | MONTERREY_2025-07": 64.15049362872777, "C038-641-HM | MONTERREY_2025-08": 51.47325742886252, "C038-641-HM | MONTERREY_2025-09": 36.72385015869035, "C038-641-HM | MONTERREY_2025-10": 53.1374605461277, "C038-641-HM | MONTERREY_2025-11": 34.43663512379749, "C038-802-HM | MOTUL TIZIMIN_2024-12": 47.681159810912355, "C038-802-HM | MOTUL TIZIMIN_2025-01": 49.82056460165617, "C038-802-HM | MOTUL TIZIMIN_2025-02": 62.6799840246394, "C038-802-HM | MOTUL TIZIMIN_2025-03": 55.48154764203218, "C038-802-HM | MOTUL TIZIMIN_2025-04": 66.08603225176802, "C038-802-HM | MOTUL TIZIMIN_2025-05": 77.3647320030085, "C038-802-HM | MOTUL TIZIMIN_2025-06": 62.65400008854509, "C038-802-HM | MOTUL TIZIMIN_2025-07": 69.37909677686808, "C038-802-HM | MOTUL TIZIMIN_2025-08": 72.68942302148399, "C038-802-HM | MOTUL TIZIMIN_2025-09": 63.62922915933692, "C038-802-HM | MOTUL TIZIMIN_2025-10": 63.76460199981416, "C038-802-HM | MOTUL TIZIMIN_2025-11": 55.51322040570654, "C038-325-HM | QUERETARO_2024-12": 34.7879563576053, "C038-325-HM | QUERETARO_2025-01": 46.67324153190237, "C038-325-HM | QUERETARO_2025-02": 56.27129283944263, "C038-325-HM | QUERETARO_2025-03": 66.10874346945653, "C038-325-HM | QUERETARO_2025-04": 71.41363040057963, "C038-325-HM | QUERETARO_2025-05": 63.644169140208874, "C038-325-HM | QUERETARO_2025-06": 62.22377830727215, "C038-325-HM | QUERETARO_2025-07": 50.59488777669012, "C038-325-HM | QUERETARO_2025-08": 52.17360544648278, "C038-325-HM | QUERETARO_2025-09": 46.866394123770306, "C038-325-HM | QUERETARO_2025-10": 52.862393114273154, "C038-325-HM | QUERETARO_2025-11": 12.841740677191618, "C038-326-HM | SAN JUAN DEL RIO_2024-12": 42.16240644075213, "C038-326-HM | SAN JUAN DEL RIO_2025-01": 47.13555811431791, "C038-326-HM | SAN JUAN DEL RIO_2025-02": 57.14575497493129, "C038-326-HM | SAN JUAN DEL RIO_2025-03": 62.38634274952989, "C038-326-HM | SAN JUAN DEL RIO_2025-04": 73.77087728198765, "C038-326-HM | SAN JUAN DEL RIO_2025-05": 63.40978205014374, "C038-326-HM | SAN JUAN DEL RIO_2025-06": 65.17167588665814, "C038-326-HM | SAN JUAN DEL RIO_2025-07": 62.14425095560845, "C038-326-HM | SAN JUAN DEL RIO_2025-08": 63.668877522067014, "C038-326-HM | SAN JUAN DEL RIO_2025-09": 33.311831004414465, "C038-326-HM | SAN JUAN DEL RIO_2025-10": 63.06444968576247, "C038-326-HM | SAN JUAN DEL RIO_2025-11": 41.37014274155731, "C038-307-HM | SAN LUIS POTOSI_2024-12": 57.17464285075814, "C038-307-HM | SAN LUIS POTOSI_2025-01": 32.146437960952525, "C038-307-HM | SAN LUIS POTOSI_2025-02": 51.26670891994226, "C038-307-HM | SAN LUIS POTOSI_2025-03": 50.226863039109425, "C038-307-HM | SAN LUIS POTOSI_2025-04": 71.89167863005328, "C038-307-HM | SAN LUIS POTOSI_2025-05": 60.3273577456989, "C038-307-HM | SAN LUIS POTOSI_2025-06": 67.48118952086575, "C038-307-HM | SAN LUIS POTOSI_2025-07": 64.58239721336847, "C038-307-HM | SAN LUIS POTOSI_2025-08": 55.35663856214632, "C038-307-HM | SAN LUIS POTOSI_2025-09": 41.474053856496255, "C038-307-HM | SAN LUIS POTOSI_2025-10": 63.88396363742442, "C038-307-HM | SAN LUIS POTOSI_2025-11": 31.707040334279483, "C038-800-HM | TICUL_2024-12": 54.93221056550025, "C038-800-HM | TICUL_2025-01": 48.8290318454321, "C038-800-HM | TICUL_2025-02": 62.872961625170866, "C038-800-HM | TICUL_2025-03": 50.443179025977635, "C038-800-HM | TICUL_2025-04": 72.05552533120625, "C038-800-HM | TICUL_2025-05": 76.72350208458097, "C038-800-HM | TICUL_2025-06": 65.61558033681301, "C038-800-HM | TICUL_2025-07": 67.55860466812115, "C038-800-HM | TICUL_2025-08": 74.0644741969111, "C038-800-HM | TICUL_2025-09": 64.25694651772737, "C038-800-HM | TICUL_2025-10": 66.85685198823703, "C038-800-HM | TICUL_2025-11": 58.31204302628657, "C038-102-HM | VDM NORTE_2024-12": 42.322155939252575, "C038-102-HM | VDM NORTE_2025-01": 49.42514861135396, "C038-102-HM | VDM NORTE_2025-02": 59.45527679140289, "C038-102-HM | VDM NORTE_2025-03": 72.79534660416333, "C038-102-HM | VDM NORTE_2025-04": 39.695917729891654, "C038-102-HM | VDM NORTE_2025-05": 30.68471068807341, "C038-102-HM | VDM NORTE_2025-06": 40.66690856609336, "C038-102-HM | VDM NORTE_2025-07": 54.76560345181824, "C038-102-HM | VDM NORTE_2025-08": 42.97985950520269, "C038-102-HM | VDM NORTE_2025-09": 50.76719488599317, "C038-102-HM | VDM NORTE_2025-10": 45.077452129236654, "C038-102-HM | VDM NORTE_2025-11": 32.99635829382336, "C038-104-HM | VDM SUR_2024-12": 57.35043086150492, "C038-104-HM | VDM SUR_2025-01": 51.51043765645914, "C038-104-HM | VDM SUR_2025-02": 63.11821517046114, "C038-104-HM | VDM SUR_2025-03": 61.836695514804674, "C038-104-HM | VDM SUR_2025-04": 37.586003677055466, "C038-104-HM | VDM SUR_2025-05": 21.677555862506583, "C038-104-HM | VDM SUR_2025-06": 31.915931723334882, "C038-104-HM | VDM SUR_2025-07": 65.87450626325165, "C038-104-HM | VDM SUR_2025-08": 43.65754956022621, "C038-104-HM | VDM SUR_2025-09": 48.72239007235146, "C038-104-HM | VDM SUR_2025-10": 42.29079876779889, "C038-104-HM | VDM SUR_2025-11": 21.50214000314235, "C038-322-HM | ZAPOTLAN_2024-12": 71.81320682514767, "C038-322-HM | ZAPOTLAN_2025-01": 46.99456201878177, "C038-322-HM | ZAPOTLAN_2025-02": 67.87941406571693, "C038-322-HM | ZAPOTLAN_2025-03": 60.35292385964641, "C038-322-HM | ZAPOTLAN_2025-04": 61.73408819829781, "C038-322-HM | ZAPOTLAN_2025-05": 55.452373385481415, "C038-322-HM | ZAPOTLAN_2025-06": 63.15898633472785, "C038-322-HM | ZAPOTLAN_2025-07": 69.75363091496017, "C038-322-HM | ZAPOTLAN_2025-08": 47.9029571577118, "C038-322-HM | ZAPOTLAN_2025-09": 33.04821132900093, "C038-322-HM | ZAPOTLAN_2025-10": 51.14859195409919, "C038-322-HM | ZAPOTLAN_2025-11": 59.57543814348069};
+        const clavesIndexEvolution = ["C038-304-HM | AGUASCALIENTES", "C038-804-HM | CANCUN", "C038-317-HM | CIENEGA", "C038-317A4A5 | CIENEGA", "C038-318-HM | GUADALAJARA", "C038-501-HM | LAGUNA", "C038-801-HS | MERIDA", "C038-641-HM | MONTERREY", "C038-802-HM | MOTUL TIZIMIN", "C038-325-HM | QUERETARO", "C038-326-HM | SAN JUAN DEL RIO", "C038-307-HM | SAN LUIS POTOSI", "C038-800-HM | TICUL", "C038-102-HM | VDM NORTE", "C038-104-HM | VDM SUR", "C038-322-HM | ZAPOTLAN"];
+        const claveZonaMapIndexEvolution = {"C038-304-HM | AGUASCALIENTES": {"clave": "C038-304-HM", "zona": "AGUASCALIENTES"}, "C038-804-HM | CANCUN": {"clave": "C038-804-HM", "zona": "CANCUN"}, "C038-317-HM | CIENEGA": {"clave": "C038-317-HM", "zona": "CIENEGA"}, "C038-317A4A5 | CIENEGA": {"clave": "C038-317A4A5", "zona": "CIENEGA"}, "C038-318-HM | GUADALAJARA": {"clave": "C038-318-HM", "zona": "GUADALAJARA"}, "C038-501-HM | LAGUNA": {"clave": "C038-501-HM", "zona": "LAGUNA"}, "C038-801-HS | MERIDA": {"clave": "C038-801-HS", "zona": "MERIDA"}, "C038-641-HM | MONTERREY": {"clave": "C038-641-HM", "zona": "MONTERREY"}, "C038-802-HM | MOTUL TIZIMIN": {"clave": "C038-802-HM", "zona": "MOTUL TIZIMIN"}, "C038-325-HM | QUERETARO": {"clave": "C038-325-HM", "zona": "QUERETARO"}, "C038-326-HM | SAN JUAN DEL RIO": {"clave": "C038-326-HM", "zona": "SAN JUAN DEL RIO"}, "C038-307-HM | SAN LUIS POTOSI": {"clave": "C038-307-HM", "zona": "SAN LUIS POTOSI"}, "C038-800-HM | TICUL": {"clave": "C038-800-HM", "zona": "TICUL"}, "C038-102-HM | VDM NORTE": {"clave": "C038-102-HM", "zona": "VDM NORTE"}, "C038-104-HM | VDM SUR": {"clave": "C038-104-HM", "zona": "VDM SUR"}, "C038-322-HM | ZAPOTLAN": {"clave": "C038-322-HM", "zona": "ZAPOTLAN"}};
+        const mesesCompletosIndexEvolution = ["2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11"];
+        
+        function updateChartIndexEvolution() {
+            console.log('updateChartIndexEvolution llamada');
+            const selector = document.getElementById('clave-select-index');
+            if (!selector) {
+                console.error('Selector no encontrado');
+                return;
+            }
+            
+            const claveZonaSeleccionada = selector.value;
+            const plotDiv = document.getElementById('plotly-div-index-evolution');
+            
+            if (!plotDiv) {
+                console.error('Div del gráfico no encontrado');
+                return;
+            }
+            
+            if (!claveZonaSeleccionada || !claveZonaMapIndexEvolution[claveZonaSeleccionada]) {
+                console.error('Clave de carga no válida:', claveZonaSeleccionada);
+                return;
+            }
+            
+            const clave = claveZonaMapIndexEvolution[claveZonaSeleccionada].clave;
+            const zona = claveZonaMapIndexEvolution[claveZonaSeleccionada].zona;
+            
+            console.log('Actualizando gráfico para:', claveZonaSeleccionada, 'Clave:', clave, 'Zona:', zona);
+            
+            // Preparar datos para el gráfico - incluir todos los meses
+            const x = [];
+            const y = [];
+            
+            mesesCompletosIndexEvolution.forEach(mes => {
+                const key = `${claveZonaSeleccionada}_${mes}`;
+                x.push(mes);
+                const valor = dataIndexEvolution[key];
+                if (valor !== null && valor !== undefined && !isNaN(valor)) {
+                    y.push(valor);
+                } else {
+                    y.push(null); // null para meses sin datos
+                }
+            });
+            
+            const valoresValidos = y.filter(v => v !== null && !isNaN(v));
+            console.log('Datos preparados - X:', x.length, 'meses, Y:', valoresValidos.length, 'valores válidos');
+            console.log('Valores Y (primeros 5):', valoresValidos.slice(0, 5));
+            
+            // Si no hay datos válidos, mostrar mensaje
+            if (valoresValidos.length === 0) {
+                console.warn('No hay datos válidos para esta clave');
+                Plotly.purge(plotDiv);
+                Plotly.newPlot(plotDiv, [], {
+                    title: {
+                        text: `Índice Óptimo–Pésimo (%) — Clave de Carga: ${clave} — Zona: ${zona}`,
+                        font: {size: 18, color: '#006633'}
+                    },
+                    annotations: [{
+                        text: 'No hay datos disponibles para esta clave de carga',
+                        xref: 'paper',
+                        yref: 'paper',
+                        x: 0.5,
+                        y: 0.5,
+                        showarrow: false,
+                        font: {size: 16}
+                    }]
+                });
+                return;
+            }
+            
+            // Crear traza
+            const trace = {
+                x: x,
+                y: y,
+                mode: 'lines+markers',
+                name: 'Índice Óptimo–Pésimo',
+                line: {color: '#006633', width: 3},
+                marker: {size: 10, color: '#006633', line: {width: 2, color: 'white'}},
+                hovertemplate: '<b>Mes:</b> %{x}<br><b>Índice:</b> %{y:.2f}%<extra></extra>',
+                fill: 'tozeroy',
+                fillcolor: 'rgba(0, 102, 51, 0.1)'
+            };
+            
+            // Línea de referencia al 50%
+            const shapes = [{
+                type: 'line',
+                xref: 'paper',
+                yref: 'y',
+                x0: 0,
+                y0: 50,
+                x1: 1,
+                y1: 50,
+                line: {
+                    color: 'gray',
+                    width: 1,
+                    dash: 'dash'
+                },
+                opacity: 0.5
+            }];
+            
+            const annotations = [{
+                x: 1,
+                y: 50,
+                xref: 'paper',
+                yref: 'y',
+                text: '50%',
+                showarrow: false,
+                xanchor: 'left',
+                yanchor: 'middle',
+                font: {color: 'gray'},
+                opacity: 0.5
+            }];
+            
+            // Actualizar gráfico usando Plotly.newPlot para recrear completamente
+            const layout = {
+                title: {
+                    text: `Índice Óptimo–Pésimo (%) — Clave de Carga: ${clave} — Zona: ${zona}`,
+                    font: {size: 18, color: '#006633'}
+                },
+                xaxis: {
+                    title: {text: 'Mes', font: {size: 14}},
+                    tickmode: 'array',
+                    tickvals: mesesCompletosIndexEvolution,
+                    ticktext: mesesCompletosIndexEvolution,
+                    tickangle: -45,
+                    showgrid: true,
+                    gridcolor: 'lightgray',
+                    showline: true,
+                    mirror: true
+                },
+                yaxis: {
+                    title: {text: 'Índice Óptimo–Pésimo (%)', font: {size: 14}},
+                    showgrid: true,
+                    gridcolor: 'lightgray',
+                    showline: true,
+                    mirror: true,
+                    range: [0, 100],
+                    tickmode: 'linear',
+                    dtick: 10
+                },
+                shapes: shapes,
+                annotations: annotations,
+                hovermode: 'x unified',
+                autosize: false,
+                width: 1200,
+                height: 600,
+                margin: {l: 80, r: 40, t: 100, b: 100},
+                template: 'plotly_white',
+                font: {family: 'Arial', size: 12},
+                showlegend: false
+            };
+            
+            // Limpiar el gráfico existente y recrear completamente
+            Plotly.purge(plotDiv);
+            Plotly.newPlot(plotDiv, [trace], layout).then(function() {
+                console.log('Gráfico actualizado exitosamente para:', claveZonaSeleccionada);
+                console.log('Valores Y:', y.filter(v => v !== null));
+            }).catch(function(err) {
+                console.error('Error al actualizar gráfico:', err);
+            });
+        }
+        
+        // Asegurar que el selector tenga el evento correctamente conectado
+        document.addEventListener('DOMContentLoaded', function() {
+            const selector = document.getElementById('clave-select-index');
+            if (selector && clavesIndexEvolution.length > 0) {
+                selector.value = clavesIndexEvolution[0];
+                // Llamar a la función inicialmente para mostrar el primer gráfico
+                updateChartIndexEvolution();
+            }
+        });
+        </script>
+        </body>
+</html>
